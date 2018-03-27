@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Login</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="style.css"/>
+<!-- Include JS File Here -->
+<script src="login.js"></script>
+</head>
+<body>
+<img src="notebook.jpg" alt="Notebook" style="width:100%;height=80%">
+<div class="container">
+<div class="content">
+<h2><b>BufferUnderrun Inc.</b></h2>
+<h3>Login Form</h3>
+<center><img src="img.png" height=100 width=100/></center>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+<table><tr><td>
+<label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+</label>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+<span><a href="#"><label>Forgot password?</label></a></span>
+</td></tr></table>
+<span><b class="note">Test cases (Username/Password):</b><br/>
+<ol>
+<b class="valid"><li>Positive :admin/admin@123</li></b>
+<b class="valid"><li>Negative 1:guest/guest@123</li></b>
+<b class="valid"><li>Negative 2:guest/guest@123</li></b>
+<b class="valid"><li>Negative 3:guest/guest@123</li></b>
+</ol>
+</span>
+</form>
+
+</div>
+</div>
+</body>
+</html>
